@@ -46,7 +46,7 @@ print "Struct: " + structure.encode('hex')
 print "Genning a diff..."
 print
 print
-print "# Difference file genned by YourCmd, an iBSS Analyzer"
+print "# Difference file built with YourCmd, an iBSS Analyzer"
 print
 print "0x" + cmdptr(dat) + ": 0x656E7770"
 print "0x" + dec2hex(obj+8) + ": 0x" + endianFlip(handlr)
