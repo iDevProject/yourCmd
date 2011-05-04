@@ -6,8 +6,8 @@ def hex2dec(s):
 def dec2hex(n):
     return "%X" % n
 def baseaddr(data):
-        initaddr=data[hex2dec("0x60"):hex2dec("0x60")+4];
-	baseaddr_end=initaddr.encode('hex')[6:8]
+        irqhandlr=data[hex2dec("0x38"):hex2dec("0x38")+4];
+	baseaddr_end=irqhandlr.encode('hex')[6:8]
 	return baseaddr_end + "000000"
 def cmdptr(data):
         return dec2hex(data.find('reset'));
