@@ -86,7 +86,7 @@ nnnnddddhhhh
 we'll mod hhhh
 
 """
-handlr="0x41000000"
+handler="0x41000000"
 print "Assuming that loadaddr is " + handlr
 structure=dat[obj:obj+12]
 print "Struct: " + structure.encode('hex')
