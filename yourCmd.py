@@ -86,7 +86,7 @@ nnnnddddhhhh
 we'll mod hhhh
 
 """
-handler="0x41000000"
+handlr="0x41000000"
 print "Assuming that loadaddr is " + handlr
 structure=dat[obj:obj+12]
 print "Struct: " + structure.encode('hex')
@@ -96,7 +96,7 @@ print
 print "# Difference file built with YourCmd, an iBSS Analyzer"
 print
 print "0x" + cmdptr(dat) + ": 6C6F6164"
-print "0x" + dec2hex(obj+8) + ": " + endianFlip(handler)
+print "0x" + dec2hex(obj+8) + ": " + endianFlip(handlr)
 
 print
 print "Injected the 'load' command. Apply the patch and enjoy."
