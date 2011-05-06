@@ -95,7 +95,7 @@ print
 print
 print "# Difference file built with YourCmd, an iBSS Analyzer"
 print
-print "0x" + cmdptr(dat) + ": 6C6F6164"
+print "0x" + cmdptr(dat) + ": 6C6F616400"
 print "0x" + dec2hex(obj+8) + ": " + endianFlip(handlr)
 
 print
