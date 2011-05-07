@@ -70,7 +70,7 @@ if len(sys.argv) == 3:
 	print
 	print "# Difference file built with YourCmd, an iBSS Analyzer"
 	print
-	print "0x" + dec2hex(obj+8) + ": 0x" + endianFlip(handlr)
+	print "0x" + dec2hex(obj+4) + ": 0x" + endianFlip(handlr)
 	exit()
 
 dat=open(sys.argv[1]).read();
@@ -96,7 +96,7 @@ print
 print "# Difference file built with YourCmd, an iBSS Analyzer"
 print
 print "0x" + cmdptr(dat) + ": 6C6F616400"
-print "0x" + dec2hex(obj+8) + ": " + endianFlip(handlr)
+print "0x" + dec2hex(obj+4) + ": " + endianFlip(handlr)
 
 print
 print "Injected the 'load' command. Apply the patch and enjoy."
